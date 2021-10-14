@@ -1,3 +1,1 @@
-# cosmicsarthak.github.io
-
-## Sarthak Mohanty 
+# Sarthak Mohanty
