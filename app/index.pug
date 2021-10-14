@@ -1,0 +1,22 @@
+html
+	head
+		include template/head.pug
+		include template/partials/_general.pug
+		include template/partials/index/_linkIndexStyle.pug
+	body
+		include template/partials/popupMenu/popupMenu.pug
+
+		//- Container
+		.container
+
+			include template/partials/index/preloader.pug
+			include template/partials/navigation/navigation.pug
+			include template/partials/devLinks/devLinks.pug
+
+			//-- Home section
+			include template/partials/index/home.pug
+
+			//-- About section
+			include template/partials/index/about.pug
+
+		include template/partials/index/_indexPageScripts.pug

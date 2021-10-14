@@ -1,0 +1,73 @@
+/*____________________________________________________________
+## Navigation
+____________________________________________________________*/
+.navigation {
+	@extend %horizontalCentering;
+	top: 30px;
+	width: 1700px;
+	height: 50px;
+	z-index: 2;
+}
+.logo {
+	position: relative;
+	float: left;
+	font-family: Galeria;
+	font-size: 44px;
+	color: $palette-secondary;
+	transition: color 0.2s;
+
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: -3px;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		background-color: $palette-secondary;
+		transition: background 0.2s;
+	}
+
+	&:hover {
+		color: $palette-social-link-hover;
+
+		&:after {
+			background-color: $palette-social-link-hover;
+		}
+	}
+}
+
+.navigation__links {
+	float: right;
+	height: 100%;
+	padding-top: 16px;
+}
+.navigation__item {
+	float: left;
+	margin-right: 30px;
+	counter-increment: item 1;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+.navigation__link {
+	font-family: Galeria-Medium;
+	font-size: 18px;
+	color: $palette-secondary;
+	cursor: pointer;
+	transition: color 0.2s;
+
+	&:before {
+		content: "0" counter(item) ".";
+	  margin-right: 5px;
+	}
+
+	&:hover {
+		color: $palette-social-link-hover;
+	}
+}
+
+/*____________________________________________________________
+# @media
+____________________________________________________________*/
+@import 'mediaQueriesPack.scss';

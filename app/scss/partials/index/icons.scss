@@ -1,0 +1,92 @@
+/*____________________________________________________________
+
+### Card wrap
+# @import Icon Styles
+	## @import learnabilityIcon.scss
+	## @import fastIcon.scss
+	## @import dynamicIcon.scss
+	## @import responsiveIcon.scss
+	## @import sociableIcon.scss
+	## @import intuitiveIcon.scss
+
+____________________________________________________________*/
+
+/*____________________________________________________________
+### Card wrap
+____________________________________________________________*/
+.cardWrap {
+	@extend %centering;
+	width: 835px;
+	height: 666px;
+}
+
+.iconCard {
+	float: left;
+	position: relative;
+	width: 265px;
+	height: 323px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	padding: 20px;
+	background-color: #9b2d30;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12),
+							0 1px 2px rgba(0,0,0,0.24);
+	overflow: hidden;
+
+	&:nth-child(3n) {
+		margin-right: 0;
+	}
+}
+.iconWrap {
+	position: relative;
+	margin-bottom: 10px;
+	width: 100%;
+	height: 110px;
+}
+.iconTitle {
+	margin-bottom: 20px;
+	text-align: center;
+	font-family: Galeria;
+	font-size: 18px;
+	color: $palette-secondary;
+}
+.iconInfo {
+	font-family: Galeria-Medium;
+	font-size: 14px;
+	text-align: justify;
+	line-height: 25px;
+	color: $palette-secondary;
+}
+
+/*____________________________________________________________
+# @import Icon Styles
+____________________________________________________________*/
+/*____________________________________________________________
+## @import learnabilityIcon.scss
+____________________________________________________________*/
+@import 'icons/learnabilityIcon.scss';
+
+/*____________________________________________________________
+## @import fastIcon.scss
+____________________________________________________________*/
+@import 'icons/fastIcon.scss';
+
+/*____________________________________________________________
+## @import dynamicIcon.scss
+____________________________________________________________*/
+@import 'icons/dynamicIcon.scss';
+
+/*____________________________________________________________
+## @import responsiveIcon.scss
+____________________________________________________________*/
+@import 'icons/responsiveIcon.scss';
+
+/*____________________________________________________________
+## @import sociableIcon.scss
+____________________________________________________________*/
+@import 'icons/sociableIcon.scss';
+
+/*____________________________________________________________
+## @import intuitiveIcon.scss
+____________________________________________________________*/
+@import 'icons/intuitiveIcon.scss';

@@ -1,0 +1,154 @@
+/*____________________________________________________________
+
+# @import
+	## @import reset.scss
+# Variables
+	## Screen size variables
+# Mixins
+	## Media queries mixin
+# Fonts
+# Auxiliary styles
+
+____________________________________________________________*/
+
+/*____________________________________________________________
+# @import
+____________________________________________________________*/
+/*____________________________________________________________
+## @import reset.scss
+____________________________________________________________*/
+@import '../../bower_components/reset-scss/reset.scss';
+
+/*____________________________________________________________
+# Variables
+____________________________________________________________*/
+/*____________________________________________________________
+## Screen size variables
+____________________________________________________________*/
+$media-screen-1824: 1824px;
+$media-screen-1728: 1728px;
+$media-screen-1680: 1680px;
+$media-screen-1600: 1600px;
+$media-screen-1440: 1440px;
+$media-screen-1366: 1366px;
+$media-screen-1280: 1280px;
+$media-screen-1180: 1180px;
+$media-screen-1120: 1120px;
+$media-screen-1180: 1180px;
+$media-screen-1080: 1080px;
+$media-screen-1024: 1024px;
+
+$media-screen-960: 960px;
+$media-screen-890: 890px;
+$media-screen-848: 848px;
+$media-screen-768: 768px;
+$media-screen-720: 720px;
+$media-screen-642: 642px;
+$media-screen-480: 480px;
+
+$media-screen-410: 414px;
+$media-screen-375: 375px;
+$media-screen-360: 360px;
+$media-screen-320: 320px;
+
+/*____________________________________________________________
+# Mixins
+____________________________________________________________*/
+/*____________________________________________________________
+## Media queries mixin
+____________________________________________________________*/
+@mixin media-screen($media) {
+	@if $media == 1824 {
+		@media only screen and (max-width: $media-screen-1824) { @content; }
+	}
+	@if $media == 1728 {
+		@media only screen and (max-width: $media-screen-1728) { @content; }
+	}
+	@else if $media == 1680 {
+		@media only screen and (max-width: $media-screen-1680) { @content; }
+	}
+	@else if $media == 1600 {
+		@media only screen and (max-width: $media-screen-1600) { @content; }
+	}
+	@else if $media == 1440 {
+		@media only screen and (max-width: $media-screen-1440) { @content; }
+	}
+	@else if $media == 1366 {
+		@media only screen and (max-width: $media-screen-1366) { @content; }
+	}
+	@else if $media == 1280 {
+		@media only screen and (max-width: $media-screen-1280) { @content; }
+	}
+	@else if $media == 1180 {
+		@media only screen and (max-width: $media-screen-1180) { @content; }
+	}
+	@else if $media == 1080 {
+		@media only screen and (max-width: $media-screen-1080) { @content; }
+	}
+	@else if $media == 1024 {
+		@media only screen and (max-width: $media-screen-1024) { @content; }
+	}
+
+	@else if $media == 960 {
+		@media only screen and (max-width: $media-screen-960) { @content; }
+	}
+	@else if $media == 890 {
+		@media only screen and (max-width: $media-screen-890) { @content; }
+	}
+	@else if $media == 848 {
+		@media only screen and (max-width: $media-screen-848) { @content; }
+	}
+	@else if $media == 768 {
+		@media only screen and (max-width: $media-screen-768) { @content; }
+	}
+	@else if $media == 720 {
+		@media only screen and (max-width: $media-screen-720) { @content; }
+	}
+	@else if $media == 642 {
+		@media only screen and (max-width: $media-screen-642) { @content; }
+	}
+	@else if $media == 480 {
+		@media only screen and (max-width: $media-screen-480) { @content; }
+	}
+	
+	@else if $media == 414 {
+		@media only screen and (max-width: $media-screen-410) { @content; }
+	}
+	@else if $media == 375 {
+		@media only screen and (max-width: $media-screen-375) { @content; }
+	}
+	@else if $media == 360 {
+		@media only screen and (max-width: $media-screen-360) { @content; }
+	}
+	@else if $media == 320 {
+		@media only screen and (max-width: $media-screen-320) { @content; }
+	}
+}
+
+/*____________________________________________________________
+# Fonts
+____________________________________________________________*/
+@font-face {
+	font-family: 'Galeria';
+	src: url('../fonts/Galeria-Bold.otf') format('opentype');
+}
+@font-face {
+	font-family: 'Galeria-Medium';
+	src: url('../fonts/Galeria-Medium.otf') format('opentype');
+}
+
+/*____________________________________________________________
+# Auxiliary styles
+____________________________________________________________*/
+::-webkit-scrollbar {
+	width: 0;
+}
+a {
+	text-decoration: none;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}

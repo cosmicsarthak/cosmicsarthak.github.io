@@ -1,0 +1,112 @@
+/*____________________________________________________________
+
+# @import constructions
+	## @import _variables.scss
+	## @import _centering.scss
+	## @import _lineInfo.scss
+	## @import _projectImgPath.scss
+	## @import _underlineWidth.scss
+	## @import preloader.scss
+# Container
+# @import Portfolio Styles
+	## @import popupMenu.scss
+	## @import navigation.scss
+	## @import portfolioCardContent.scss
+	## @import portfolioCardWrap.scss
+	## @import popupPortfolio.scss
+	## @import presentPage.scss
+	## @import detailPage.scss
+	## @import portfolioPage.scss
+# @media
+
+____________________________________________________________*/
+
+/*____________________________________________________________
+# @import constructions
+____________________________________________________________*/
+/*____________________________________________________________
+## @import _variables.scss
+____________________________________________________________*/
+@import 'partials/variables/_variables.scss';
+
+/*____________________________________________________________
+## @import _centering.scss
+____________________________________________________________*/
+@import 'partials/extends/_centering.scss';
+
+/*____________________________________________________________
+## @import _lineInfo.scss
+____________________________________________________________*/
+@import 'partials/mixins/_lineInfo.scss';
+
+/*____________________________________________________________
+## @import _projectImgPath.scss
+____________________________________________________________*/
+@import 'partials/mixins/_projectImgPath.scss';
+
+/*____________________________________________________________
+## @import _underlineWidth.scss
+____________________________________________________________*/
+@import 'partials/mixins/_underlineWidth.scss';
+
+/*____________________________________________________________
+## @import preloader.scss
+____________________________________________________________*/
+@import 'partials/portfolio/preloader.scss';
+
+/*____________________________________________________________
+# Container
+____________________________________________________________*/
+.container {
+	position: absolute;
+	width: 100%;
+	background-color: $palette-primary;
+}
+
+/*____________________________________________________________
+# @import Portfolio Styles
+____________________________________________________________*/
+/*____________________________________________________________
+## @import popupMenu.scss
+____________________________________________________________*/
+@import 'partials/popupMenu/popupMenu.scss';
+
+/*____________________________________________________________
+## @import navigation.scss
+____________________________________________________________*/
+@import 'partials/navigation/navigation.scss';
+
+/*____________________________________________________________
+## @import portfolioCardContent.scss
+____________________________________________________________*/
+@import 'partials/portfolio/portfolioCardContent.scss';
+
+/*____________________________________________________________
+## @import portfolioCardWrap.scss
+____________________________________________________________*/
+@import 'partials/portfolio/portfolioCardWrap.scss';
+
+/*____________________________________________________________
+## @import popupPortfolio.scss
+____________________________________________________________*/
+@import 'partials/portfolio/popupPortfolio.scss';
+
+/*____________________________________________________________
+## @import presentPage.scss
+____________________________________________________________*/
+@import 'partials/portfolio/presentPage.scss';
+
+/*____________________________________________________________
+## @import detailPage.scss
+____________________________________________________________*/
+@import 'partials/portfolio/detailPage.scss';
+
+/*____________________________________________________________
+## @import portfolioPage.scss
+____________________________________________________________*/
+@import 'partials/portfolio/portfolioPage.scss';
+
+/*____________________________________________________________
+# @media
+____________________________________________________________*/
+@import 'partials/portfolio/mediaQueriesPack.scss';
